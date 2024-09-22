@@ -1,0 +1,189 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Fondo gris claro */
+}
+
+h1, h2, h3 {
+    color: #21272e; /* Texto oscuro */
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+p.primer {
+    margin-left: 170px;
+    text-align: justify;
+}
+
+p.Segun {
+    margin-right: 5px;
+    width: 59%;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    padding: 30px 0;
+    background: #b7d3ee; /* Azul oscuro */
+    color: black; /* Texto blanco */
+}
+
+#Fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    opacity: 0.8; /* Opacidad sutil */
+}
+
+#menu {
+    display: block;
+    background-color: #7f8c8d; /* Gris */
+    text-align: center; /* Centra el texto en el menú */
+}
+
+#menu a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: inline-block; /* Para que los enlaces se alineen horizontalmente */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#menu a:hover {
+    background-color: #8e44ad; /* Morado al pasar el mouse */
+    transform: scale(1.1);
+}
+
+#principalcontent {
+    width: 70%; /* Ancho del contenido principal */
+    margin: 20px auto; /* Centra el contenido */
+}
+
+#primarycontent {
+    float: left; /* Alinea el contenido principal a la izquierda */
+    width: 70%; /* Ancho del contenido principal */
+}
+
+#secondarycontent {
+    float: right; /* Alinea el contenido secundario a la derecha */
+    width: 25%; /* Ancho del contenido secundario */
+}
+
+.bloque {
+    background-color: #7f8c8d; /* Gris */
+    padding: 25px;
+    margin: 20px 0; /* Espaciado aumentado */
+    border: 2px solid #2c3e50; /* Bordes en azul oscuro */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.cajabloque {
+    background-color: #99c6ee;
+    padding: 20px;
+    margin: 10px 0;
+    border: 2px solid #0067dd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-style: bold;
+}
+
+.bloque img {
+    width: 250px;
+    height: 250px;
+}
+
+.inline {
+    background-color: #859cb4; /* Azul oscuro */
+    padding: 10px;
+    margin: 20px 0; /* Espaciado aumentado */
+    border-radius: 5px;
+    color: white; /* Texto en blanco */
+}
+
+.cajainline {
+    padding: 5px;
+    margin: 5px;
+    display: inline-block; /* Mejor control */
+}
+
+/* Clearfix para evitar problemas de flotación */
+#principalcontent::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.post, .postA {
+    background: #ffffff;
+    height: auto;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); 
+}
+
+.picA {
+    max-width: 12%;
+    height: auto;
+    display: block;
+    margin: -10px;
+    float: left;
+}
+
+.picB {
+    max-width: 42%;
+    height: auto;
+    display: block;
+    margin: -75px;
+    float: right;
+    margin-right: -17px;
+}
+
+.linklist {
+    list-style: none;
+    padding: 0;
+}
+
+.linklist li {
+    margin: 10px 0;
+}
+
+.linklist a {
+    text-decoration: none;
+    color: #3498db; /* Azul para enlaces */
+}
+
+.linklist a:hover {
+    text-decoration: underline; 
+}
+
+aside {
+    margin-top: 500px;
+    padding-top: 150px;
+}
